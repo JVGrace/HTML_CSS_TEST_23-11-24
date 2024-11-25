@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Overlay With Text</title>
+    <style>
+        .image{
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .image img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            color:aliceblue;
+            font-size: 60px;
+            z-index: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color:hwb(img background-color h w b) transparent;
+
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="https://imgs.search.brave.com/23R6j7xkupKfeK31yBFsxylqZIWyJ4gGynTJWkccjyA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ3/MjMzNTQ3Ni9waG90/by9kaWdpdGFsbHkt/Z2VuZXJhdGVkLWlt/YWdlLW9mLWlzb21l/dHJpYy1kYXRhLWNo/YXJ0LmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1RTmtnZlZn/WUNYUTdsbzg0TWdt/Y0NtTVAwb1Fsdl9t/V252aWFPc1ktNEQw/PQ" alt="Image1">
+        <div class="text">Text Overlay On Image Text!</div>
+    
+    </div>
+    
+</body>
+</html>
